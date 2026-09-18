@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary: #d81f26;
+    --secondary: #a91116;
+    --accent: #c8141b;
+    --bg: #f0f0f0;
+    --card-bg: #fff;
+    --text: #222;
+  }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d83f44;
+    color: #fff;
+    padding: 15px 40px;
+  }
+  
+  .logo-section {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  header h1 {
+    font-size: 21px;
+    letter-spacing: 2px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    padding: 10px 10px;
+    background-color: #c8141b;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #a91116;
+  }
+  
+  .content {
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Arial Black';
+    position: relative;
+    top: 65px;
+  }
+  
+  .content h3 {
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    top: 75px;
+    color: #d81f26;
+    letter-spacing: 5px;
+  }
+  
+  .kll h2 {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+    color: #d81f26;
+    padding-left: 50px;
+  }
+  
+  .kll p {
+    font-size: 20px;
+    font-weight: 150px;
+    position: relative;
+    top: 90px;
+    padding: 70px;
+    text-align: justify;
+  }
+  
+  footer {
+    margin-top: auto;
+    background-color: var(--primary);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px;
+    position: relative;
+    top: 193px;
+  }
+  
+  .content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .main-content {
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .main-content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    top: 65px;
+  }
+  
+  .main-content h3 {
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    top: 75px;
+    color: #d81f26;
+    letter-spacing: 5px;
+  }
+  
+  .center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: var(--bg);
+    padding: 20px;
+  }
+  
+  .login-form, .card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .input-field {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, select {
+    color: black;
+    border: 2px solid var(--primary);
+    border-radius: 7px;
+    padding: 10px 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .input-field input:focus,
+  .input-field select:focus {
+    border: 2px solid transparent;
+    transition: all 0.1s ease;
+    background: linear-gradient(#fff, #fff) padding-box,
+                linear-gradient(45deg, black, red) border-box;
+    box-shadow: 0 0 5px #a91116;
+  }
+  
+  .checkbox-field {
+    display: flex;
+    align-items: center;
+    flex: 1 1 100%;
+    gap: 10px;
+  }
+  
+  input[type="checkbox"] {
+    accent-color: #d81f26;
+    transform: scale(1.2);
+  }
+  
+  .action {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .btn-signup, .btn-signin {
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: var(--primary);
+    color: #fff;
+    transition: background 0.3s;
+    margin: 5px;
+  }
+  
+  .btn-signup:hover, .btn-signin:hover {
+    background: var(--secondary);
+  }
+  
+  .input-field input,
+  .input-field select {
+    padding: 10px 10px;
+    border: 2px solid var(--primary);
+    border-radius: 6px;
+    font-size: 16px;
+    color: black;
+  }
+  
+  .input-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: #d81f26;
+      padding: 10px 0;
+    }
+    
+    nav a {
+      margin: 5px 5px;
+      padding: 10px 9px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .logo-section {
+      margin-bottom: 10px;
+      justify-content: center;
+      width: 100%;
+    }
+    
+    header h1 {
+      font-size: 22px;
+      text-align: center;
+      width: 100%;
+    }
+    
+    .card, .login-form {
+      max-width: 95vw;
+      padding: 15px;
+    }
+  }

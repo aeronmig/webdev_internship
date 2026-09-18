@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Modernized tracker-css.css for unified card layout, color palette, and responsive design */
+:root {
+  --primary: #d81f26;
+  --secondary: #a91116;
+  --accent: #c8141b;
+  --bg: #f0f0f0;
+  --card-bg: #fff;
+  --text: #222;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    padding: 15px 40px;
+}
+
+.logo-section {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-size: 21px;
+    letter-spacing: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    padding: 10px 10px;
+    background-color: var(--accent);
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--secondary);
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: var(--bg);
+  padding: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 900px;
+  width: 100%;
+}
+
+.tracker-container {
+    background-color: var(--card-bg);
+    border: 2px solid var(--primary);
+    padding: 5.5rem;
+    margin-top: 2rem;
+    border-radius: 12px;
+}
+
+.tracker-container h3 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.details .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.details label {
+    width: 48%;
+    font-size: 0.9rem;
+}
+
+.input-field input, .input-field select {
+  border-radius: 6px;
+  border: 2px solid var(--primary);
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 3rem;
+}
+
+table, th, td {
+    border: 2px solid var(--primary);
+}
+
+th, td {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+th {
+    background-color: #fddede;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff5f5;
+}
+
+.btn-signup, .btn-signin {
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  transition: background 0.3s;
+  margin: 5px;
+}
+
+.btn-signup:hover, .btn-signin:hover {
+  background: var(--secondary);
+}
+
+footer {
+    margin-top: auto;
+    background-color: var(--primary);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px;
+}
+
+@media print {
+  .btn-print,
+  nav,
+  footer {
+    display: none !important;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap: break-word;
+  }
+
+  table th,
+  table td {
+    padding: 8px;
+    border: 1px solid #000;
+    font-size: 12px;
+  }
+
+  body {
+    margin: 0;
+    padding: 1cm;
+  }
+  h2 {
+    display:none;
+  }
+  title {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 10px 0;
+  }
+  
+  nav a {
+    margin: 5px 15px;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .logo-section {
+    margin-bottom: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+  header h1 {
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .card, .login-form {
+    max-width: 95vw;
+    padding: 15px;
+  }
+}
